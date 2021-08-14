@@ -13,7 +13,7 @@ from PIL import Image
 from pyzbar.pyzbar import decode
 
 # QRコードの作成
-qr = qrcode.QRCode(box_size=2)
+qr = qrcode.QRCode(box_size=15)
 qr.add_data('Hello')
 qr.make()
 img_qr = qr.make_image()
