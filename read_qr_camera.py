@@ -18,7 +18,7 @@ class ReadQR():
         self.image = 0
         self.cv_bridge = CvBridge()
         time.sleep(1)
-        self.processing_qr()
+        #self.processing_qr()
 
 
     def processing_qr(self):
@@ -41,8 +41,9 @@ class ReadQR():
             
             #time.sleep(0.1)
         cv2.imshow('frame',img)
-        cv2.waitKey(0)
+        cv2.waitKey(5000)
         rospy.loginfo("finished")
+        return num0
     
 
     def image_callback(self, img):
@@ -73,4 +74,3 @@ class ReadQR():
 if __name__ == "__main__":
     rospy.init_node('read_qr')
     node = ReadQR()
-    rospy.spin()

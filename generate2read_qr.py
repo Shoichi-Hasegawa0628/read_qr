@@ -14,7 +14,7 @@ from pyzbar.pyzbar import decode
 
 # QRコードの作成
 qr = qrcode.QRCode(box_size=15)
-qr.add_data('Hello')
+qr.add_data('master_chef_can')
 qr.make()
 img_qr = qr.make_image()
 img_qr.save('./data/test.png')
