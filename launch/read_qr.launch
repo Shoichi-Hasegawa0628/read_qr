@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node name="read_qr" pkg="read_qr" type="read_qr.py" output="screen" cwd="node" />
+</launch>

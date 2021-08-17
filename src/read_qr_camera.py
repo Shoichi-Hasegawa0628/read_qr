@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# ROSのTopic経由でQRコードを読み取るプログラム
 
 from pyzbar.pyzbar import decode
 from pyzbar.pyzbar import ZBarSymbol

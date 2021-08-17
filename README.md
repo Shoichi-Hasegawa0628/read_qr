@@ -21,8 +21,16 @@ The `read_qr` is to read qr.
 
 ## Launch
 
+~~~
+roslaunch read_qr read_qr.launch
+~~~
 
 ## Files
 
+ - `README.md`: Read me file (This file)
+
+ - `read_qr.py`: Read QR-code by using image topic.
+
+ - `generate2read_qr.py`:  Generate QR-code by input sentense, and read QR-code by using image.
 
 ## References

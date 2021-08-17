@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# 指定した文字列でQRを生成し、その後にQRを読み込むコード
 
 # 以下のモジュールが必要 (QRコード作成用)
 # pip install pyzbar
@@ -18,7 +19,6 @@ qr.add_data('Hello')
 qr.make()
 img_qr = qr.make_image()
 img_qr.save('./data/test.png')
-#cv2.imwrite('./data/test.png', img_qr)
 
 #QRコードを読み込む
 im = cv2.imread('./data/test.png')
